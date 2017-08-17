@@ -1,11 +1,15 @@
 import PIL
 from PIL import Image
 
+#now that i've hacked together something with tkinter for a GUI, I can re-do some of this
+#needs to be ported to 3.x though...
 im = Image.open("santa-800.jpg")
 px = im.load()
 
+#this should be something I can pull from image data
 width = 800
 height = 600
+
 mapped_chars =  ' .:-=+*#%@'
 mapped_chars = list(mapped_chars)
 
